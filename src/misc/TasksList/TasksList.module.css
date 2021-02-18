@@ -1,0 +1,150 @@
+.MainWrapper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 60px;
+}
+
+.MainWrapper::after {
+    content: "";
+    height: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 90;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 1)
+    );
+}
+
+.MainWrapperInner {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Title {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 22px;
+}
+
+.List {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ListItem {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.ListItemInner {
+    width: 100%;
+    height: 50px;
+    padding: 0 20px 0 30px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.11);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ItemTitle {
+    width: 100%;
+    padding-right: 10px;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+}
+
+.ItemInputMask {
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 1)
+    );
+}
+
+.ItemTitle::placeholder {
+    opacity: 0.4;
+}
+
+.ItemButton {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+}
+
+.ItemButtonIcon {
+    width: 12px;
+}
+
+.SetButton {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 110;
+    background-color: #5ca8e0;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    font-size: 40px;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    transition: transform 0.5s ease;
+}
+
+.SetButtonImg {
+    width: 25px;
+}
+
+.SetButtonSmall {
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    z-index: 100;
+    background-color: #5ca8e0;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.SetButtonSmallImg {
+    height: 15px;
+}
